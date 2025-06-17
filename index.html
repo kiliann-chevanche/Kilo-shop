@@ -1,64 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr-FR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="">
 </head>
 <body>
     <header>
         <img class="logo" src="" alt="logo">
             <nav>
                 <ul>
-                    <li class="bouton"><a href="#">Concept</a></li>
-                    <li class="bouton"><a href="#">Déposer</a></li>
-                    <li class="bouton"><a href="#">Actues</a></li>
-                    <li class="bouton"><a href="#">Shops</a></li>
-                    <li class="bouton"><a href="#">Pays</a></li>
-                    <li class="bouton"><a href="#">Langue</a></li>
-                    <li class="bouton"><a href="#">Connexion</a></li>
+                    <li class="bouton1"><a href="#" id="menu_concept">Concept</a></li>
+                    <li class="bouton"><a href="#" id="menu_deposer">Déposer</a></li>
+                    <li class="bouton"><a href="#" id="menu_actus">Actues</a></li>
+                    <li class="bouton"><a href="#" id="menu_shops">Shops</a></li>
+                    <li class="bouton"><a href="#" id="menu_pays">Pays</a></li>
+                    <label for="languageSelector">Langue :</label>
+                    <select id="languageSelector">
+                        <option value="fr">Français</option>
+                        <option value="en">English</option>
+                        <option value="el">Ελληνικά</option>
+                        <option value="de">Deutsch</option>
+                        <option value="nl">Nederlands</option>  
+                    </select>
+                    <li class="bouton"><a href="#" id="menu_connexion">Connexion</a></li>
                 </ul>
             </nav>
     </header>
-    <div></div>
-        <h1>Un kilo c'est koi ?</h1>
-        <p>
-            Un kilo de plume, c’est pareil qu’un kilo de plomb (même si  une doudoune en plume, c’est plus pratique qu’une doudoune en plomb)
 
-            Alors ok, une robe en soie, ça ne pèse pas lourd. Sauf que sa matière première vaut plus que celle d’une robe en coton…
-
-            Donc, chez Kilo Shop, on a fait simple : à chaque vêtement ou accessoire, son bip de couleur qui correspond à un prix/kg selon les matières.
-
+    <section class="hero-banner">
+        <h1 id="title">Un kilo c'est koi ?</h1>
+        <p id="description">
+            Un kilo de plume, c’est pareil qu’un kilo de plomb (même si  une doudoune en plume, c’est plus pratique qu’une doudoune en plomb) <br>
+            Alors ok, une robe en soie, ça ne pèse pas lourd. Sauf que sa matière première vaut plus que celle d’une robe en coton… <br>
+            Donc, chez Kilo Shop, on a fait simple : à chaque vêtement ou accessoire, son bip de couleur qui correspond à un prix/kg selon les matières. <br>
             En gros, 1 kilo by Kilo Shop, c’est 3 à 6 pièces uniques dans votre panier.
         </p>
-        <img class="hero banner" src="" alt="image d'une femme assise sur un stock de vêtment et entourer par un stock de vêtment">
-    </div>
-    <div>
+        <img class="personne" src="" alt="une femme assise sur un stock de vêtment et entourer par un stock de vêtment">
+    </section>
+    <section class="mascotte-situation">
         <img src="" alt="la mascotte de kilo shop va dans un magasin avec le texte allez au dessus de sa tête et le texte go en dessous de lui">
         <img src="" alt="la mascotte choisi un vêtement. Il y a écris choisissez au dessus de lui et choose en dessous de lui.">
         <img src="" alt="la mascotte pèse le vêtement qu'elle à choisi. Il est écris pesez au dessus de la mascotte et weight it en dessous.">
         <img src="" alt="la mascotte part de la boutique de la boutique avec un sac kilo shop à la main.">
-    </div>
-    <div>
-        <img class="balance" src="" alt="image d'une balance.">
-        <h2>
-            Pesez, Payez, Profitez : 
+    </section>
+    <section class="prix">
+        <img class="balance" src="" alt="une balance.">
+        <h2 id="pricing_title">
+            Pesez, Payez, Profitez : <br>
             des prix au kilo de 20 à 60 € !
         </h2>
-        <p>
-            Avec des pièces homme & femme des années 70 à nos jours en provenance du monde entier : 
-
-            Baskets, Blousons, Bombers, Bobs, Bottes, Casquettes, Ceintures, 
-            Chapeaux, Chaussures, Chemises & Chemisiers, Imperméables, 
-            Jeans, Jupes, Kimonos, Jogging, Manteaux, Pantalons, Pulls, Robes, 
-            Sacs, Short, Spencers, Sweat, T.S, Vestes… et un réassort toutes 
+        <p id="pricing_text">
+            Avec des pièces homme & femme des années 70 à nos jours en provenance du monde entier : <br>
+            <br>
+            Baskets, Blousons, Bombers, Bobs, Bottes, Casquettes, Ceintures, <br> 
+            Chapeaux, Chaussures, Chemises & Chemisiers, Imperméables, <br>
+            Jeans, Jupes, Kimonos, Jogging, Manteaux, Pantalons, Pulls, Robes, <br>
+            Sacs, Short, Spencers, Sweat, T.S, Vestes… et un réassort toutes <br>
             les semaines, vous trouverez forcément votre bonheur !
         </p>
-    </div>
-    <div>
-        <img src="" alt="">
-    </div>
+    </section>
+    <section class="prix-image">
+        <img class="rouge" src="" alt="pour les vêtements portant une pastille rouge, le pris est de 20€ le kilo">
+        <img class="verte" src="" alt="pour les vêtements portant une pastille verte, le pris est de 30€ le kilo">
+        <img class="bleu" src="" alt="pour les vêtements portant une pastille bleu, le pris est de 40€ le kilo">
+        <img class="orange" src="" alt="pour les vêtements portant une pastille orange, le pris est de 60€ le kilo">
+    </section>
+    <section class="theme">
+        <h2 id="theme_title">
+            Des boutiques à thème pour une expérience unique.
+        </h2>
+        <p id="theme_text">
+            Indus, rétro, arty ou pop : certaines boutiques Kilo Shop adoptent 
+            un univers visuel bien à elles ! 
+            Chaque lieu a son ambiance, son décor, son identité. On chine 
+            ses pièces préférées dans un décor qui change tout : néons, 
+            mobilier chiné, murs colorés, ambiance années 90 ou vibe urbaine…
+
+            Même principe, même concept au kilo, mais une atmosphère qui 
+            donne envie de fouiller encore plus.
+
+            Parce qu’acheter vintage, c’est aussi une question de style. 
+            Et chez Kilo Shop, le style est partout même sur les murs.
+        </p>
+        <div class="slideshow-container">
+        <!-- Slides du carousel avec image et description -->
+        <div class="slides fade">
+            <img src="https://picsum.photos/id/1015/600/400" />
+            <div class="text">Description</div>
+        </div>
+
+        <div class="slides fade">
+            <img src="https://picsum.photos/id/1016/600/400" />
+            <div class="text">Description</div>
+        </div>
+
+        <div class="slides fade">
+            <img src="https://picsum.photos/id/1018/600/400" />
+            <div class="text">Description</div>
+        </div>
+
+        <!-- Boutons précédent et suivant du carousel -->
+        <a class="prev" id="prev">❮</a>
+        <a class="next" id="next">❯</a>
+        </div>
+        <br />
+
+        <!-- Points de suivi du carousel -->
+        <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
  <script src="script.js"></script> 
 </body>
 </html>
