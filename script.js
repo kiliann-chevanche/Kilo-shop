@@ -102,3 +102,46 @@ const translations = {
       document.getElementById("languageSelector").value = savedLang;
       updateLanguage(savedLang);
     });
+
+let slideIndex = 1;
+showSlide(slideIndex);
+
+// Fonction pour passer à la slide suivante/précédente
+function plusSlides(n) {
+  showSlide(slideIndex += n);
+}
+
+// Fonction pour aller à une slide spécifique
+function currentSlide(n) {
+  showSlide(slideIndex = n);
+}
+
+function showSlide(n) {
+  let i;
+  const slides = document.getElementsByClassName("slides");
+  const dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].classList.add("active");
+}
+
+// Auto-défilement toutes les 5 secondes
+setInterval(() => {
+  plusSlides(1);
+}, 8000);
+
+// Lien des flèches avec JS
+document.getElementById("prev").addEventListener("click", () => plusSlides(-1));
+document.getElementById("next").addEventListener("click", () => plusSlides(1));
+
